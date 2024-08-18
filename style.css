@@ -1,0 +1,107 @@
+:root {
+    --surface-color: #f3e9df;
+    --surface-color-fade: #e6d6bd;
+    --color: #323232;
+    --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface-color: #282828;
+      --color: #f3e9df;
+    }
+  }
+  
+  .body {
+    background-color: var(--surface-color);
+    color: var(--color);
+    font-family: var(--font-family-sans);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .section,
+  .footer {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  
+  .section {
+    box-sizing: border-box;
+  }
+  
+  .title {
+    margin: 0 0 2rem 0;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  
+  .text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list > .item {
+    margin: 0 0 .5rem 0;
+    color: var(--color);
+    font-size: 1.75rem;
+  }
+  
+  .link {
+    color: var(--color);
+    text-decoration-style: dotted;
+  }
+  
+  .link:hover,
+  .link:focus {
+    outline: dotted .125rem var(--color);
+  }
+  
+  .hazyBlock {
+    background-color: rgba(0, 0, 0, .05);
+    padding: 1rem;
+    border-radius: .75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer {}
+  
+  .footer > .text {}
+  
+  /* At the top level of your code */
+  @media screen and (min-width: 768px) {
+    .section > .title {
+      font-size: 5rem;
+      line-height: 1;
+    }
+  
+    .section {
+      padding: 4rem 1rem;
+      height: 90vh
+    }
+  
+    .footer {
+      height: 10vh;
+    }
+  }
